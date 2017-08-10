@@ -6,10 +6,11 @@ import {
 } from './components/index.pagina';
 
 const APP_ROUTES: Routes = [
-    { path: '', component: PortafolioComponent },
+    { path: 'home', component: PortafolioComponent },
     { path: 'about', component: AboutComponent },
     { path: 'producto', component: ProductoComponent },
-    { path: '**', pathMatch: 'full', redirectTo: '' }
+    { path: 'app-portafolio', component: ProductoComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: true });
