@@ -20,6 +20,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 // Servicios
 import { InformacionService } from './services/informacion.service';
 import { ProductosService } from './services/productos.service';
+import { SearhComponent } from './components/searh/searh.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductosService } from './services/productos.service';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ProductoComponent
+    ProductoComponent,
+    SearhComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {
     AboutComponent,
     PortafolioComponent,
-    ProductoComponent
+    ProductoComponent,
+    SearhComponent
 } from './components/index.pagina';
 
 const APP_ROUTES: Routes = [
@@ -10,6 +11,7 @@ const APP_ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'producto/:id', component: ProductoComponent },
     { path: 'app-portafolio', component: ProductoComponent },
+    { path: 'buscar/:termino', component: SearhComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
