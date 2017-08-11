@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// http
+
+import { HttpModule } from '@angular/http';
+
+
 // Rutas
 import { APP_ROUTING } from './app.routes';
 
@@ -11,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
+
+// Servicios
+import { InformacionService } from './services/informacion.service';
 
 @NgModule({
   declarations: [
@@ -23,9 +31,11 @@ import { ProductoComponent } from './components/producto/producto.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    HttpModule
   ],
   providers: [
+    InformacionService
   ],
   bootstrap: [AppComponent]
 })
