@@ -19,6 +19,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 
 // Servicios
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InformacionService } from './services/informacion.service';
     HttpModule
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
