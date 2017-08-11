@@ -20,7 +20,6 @@ export class ProductoComponent {
           .subscribe(data => {
             this.producto = data.json();
             this.id = params['id'];
-            console.log(this.producto);
           });
       })
   }
